@@ -228,10 +228,9 @@ header a small {
 .prj-buttons a,
 .prj-buttons a:active {
     display: inline-block;
-    height: 46px;
-    line-height: 46px;
+    line-height: 3em;
     background: #555;
-    padding: 0 20px;
+    padding: 0 1.2em;
     color: #fff;
     font-size: 1.15em;
     border-radius: 2px;
@@ -275,12 +274,20 @@ header a small {
 
 @media (max-width: 480px) {
     header {
-        font-size: 60%
+
     }
     body {
-        margin: 10px;
+        padding: 10px;
     }
+    .prj-buttons {
+        font-size: 90%;
+    }
+    .prj-mission {
+        display: none;
+    }
+
     .prj-title a {
+        font-size: 60%
         font-weight: 300;
     }
 
