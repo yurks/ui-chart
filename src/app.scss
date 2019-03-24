@@ -2,8 +2,10 @@
 
   &-- {
     &graph {
-      display: block;
-      stroke-width: 2px;
+      svg {
+        display: block;
+        stroke-width: 2px;
+      }
     }
     &bar {
       position: relative;
