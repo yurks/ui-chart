@@ -201,7 +201,7 @@ header a small {
 
 .prj-mission {
     color: #333;
-    padding: .5em 0;
+    padding: 1.5em 0;
     font-size: 1.5em;
     line-height: 1.4em;
     font-family: Lato;
@@ -234,7 +234,7 @@ header a small {
     color: #fff;
     font-size: 1.15em;
     border-radius: 2px;
-    margin: 0 10px 15px 0;
+    margin: 1em;
 }
 
 .prj-buttons a.prj-buttons-download:hover {
