@@ -294,7 +294,7 @@ header a small {
   .prj-title a {
     font-weight: 300;
     font-size: 1.5em;
-    padding: 0;
+    padding-bottom: 0.4em;
   }
 
 }
