@@ -1,0 +1,5 @@
+name: ui-chart
+version: 0.1.0
+tagline: Pure javascript chart implementation.
+tagline2: With care for size and perfomance.
+github: yurks
