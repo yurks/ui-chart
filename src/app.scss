@@ -1,6 +1,10 @@
 .ui-chart {
 
   &-- {
+    &graph {
+      display: block;
+      stroke-width: 2px;
+    }
     &bar {
       position: relative;
       border-top: 1px solid #eee;
