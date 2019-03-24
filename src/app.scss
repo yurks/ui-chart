@@ -1,0 +1,122 @@
+.ui-chart {
+
+  &-- {
+    &bar {
+      position: relative;
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+      overflow: hidden;
+      background: #fefefe;
+
+      svg {
+        height: 60px;
+        display: block;
+        stroke-width: 1.5px;
+        opacity: .9;
+
+      }
+    }
+
+    &axis {
+      position: relative;
+
+      .x-axis {
+        position: absolute;
+        bottom: 0;
+        height: 40px;
+        left: 40px;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .y-axis {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40px;
+        bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+
+      .y-axis > div::after {
+        margin-right: 4px;
+        content: attr(data-value);
+        color: black;
+        display: inline-block;
+      }
+
+      .x-axis > div::after {
+        margin-top: 4px;
+        display: inline-block;
+        content: attr(data-value);
+        color: black;
+      }
+    }
+
+
+    &viewport-wrapper {
+      position: absolute;
+      top:0;
+      left:0;
+      right:0;
+      bottom:0;
+      border: 1px solid #000;
+      border-left-width: 0;
+      border-right-width: 0;
+      opacity: .1;
+      cursor: move;
+      cursor: grab;
+
+      &[moving] {
+        cursor: grabbing;
+      }
+
+    }
+    &viewport-boundary {
+      background: #000;
+      display: block;
+      position: absolute;
+      width: 6px;
+      top:0;
+      bottom:0;
+      cursor: ew-resize;
+
+      &[left] {
+        left: 0;
+      }
+      &[right] {
+        right: 0;
+      }
+    }
+
+    &viewport {
+      height: 100%;
+      z-index: 1;
+      position: absolute;
+
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 2000px;
+        opacity: .75;
+      }
+
+      &:before {
+        right: 100%;
+        background: linear-gradient(to left, rgba(250,250,250,1) 0%,rgba(250,250,250,1) 93%,rgba(250,250,250,0) 100%);
+      }
+      &:after {
+        left: 100%;
+        background: linear-gradient(to right, rgba(250,250,250,1) 0%,rgba(250,250,250,1) 93%,rgba(250,250,250,0) 100%);
+      }
+
+    }
+  }
+}
+
