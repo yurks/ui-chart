@@ -65,17 +65,19 @@
     cursor: grabbing; }
 
 .ui-chart--viewport-boundary {
-  background: #000;
   display: block;
   position: absolute;
-  width: 6px;
+  width: 8px;
+  border: 0 solid black;
   top: 0;
   bottom: 0;
   cursor: ew-resize; }
   .ui-chart--viewport-boundary[left] {
-    left: 0; }
+    left: 0;
+    border-width: 0 0 0 6px; }
   .ui-chart--viewport-boundary[right] {
-    right: 0; }
+    right: 0;
+    border-width: 0 6px 0 0; }
 
 .ui-chart--viewport {
   height: 100%;
