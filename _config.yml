@@ -1,5 +1,5 @@
 name: ui-chart
-version: 0.1.0
+version: 0.1.0-tg-contests
 tagline: Pure javascript chart implementation.
-tagline2: With care for size and perfomance.
+tagline2: With care for perfomance and size (~9kB of minified code).
 github: yurks
