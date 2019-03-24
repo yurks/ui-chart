@@ -27,7 +27,13 @@ h1 {
 }
 
 h2 {
-  color:#393939;
+  color: #444;
+  font-family: Lato;
+  font-weight: 400;
+  margin: 2em 0 .5em;
+}
+h2:first-child {
+  margin-top: 0;
 }
 
 h3, h4, h5, h6 {
@@ -174,6 +180,7 @@ section {
   border-width:1px 0;
   padding: 1.5em 0;
   margin:0 0 1em;
+  text-align: center;
 }
 
 header a small {

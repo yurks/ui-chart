@@ -1,5 +1,9 @@
 /*! ui-chart v0.1.0 | yurks.github.io | MIT */
 
+.ui-chart--graph svg {
+  display: block;
+  stroke-width: 2px;
+}
 .ui-chart--bar {
   position: relative;
   border-top: 1px solid #eee;
